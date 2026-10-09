@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Datos generados (CSV de registros)
+*.csv
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Fotos (se guardan localmente para entrenar, no van al repositorio)
+fotos/*
+!fotos/.gitkeep
+*.jpg
+*.jpeg
+*.png
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
