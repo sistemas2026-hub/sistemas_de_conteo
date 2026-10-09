@@ -42,6 +42,21 @@ En Raspberry Pi sin pantalla se puede usar `opencv-python-headless` en lugar de 
 
 ## Ejecución
 
+### Con doble clic (Windows)
+
+| Archivo | Qué hace |
+|---|---|
+| `contar.bat` | Abre el contador con la cámara y la calibración configuradas. Guarda en `datos\registro_mm.csv` |
+| `calibrar.bat` | Pide la medida real del objeto (ej. una moneda) y abre el modo calibración |
+| `config.bat` | Configuración: dirección de la cámara (`FUENTE`), calibración (`MM_POR_PIXEL`) y archivo CSV |
+
+Si cambia la IP del celular o se recalibra, solo se edita `config.bat` (clic derecho → Editar).
+Para salir del video: clic en la ventana y tecla **Q**.
+
+**Celular como cámara:** con la app IP Webcam (Play Store), el celular y el computador en la misma red Wi-Fi, se usa la dirección que muestra la app con `/video` al final, por ejemplo `http://192.168.1.XX:8080/video`.
+
+### Desde la terminal
+
 Ver todas las opciones:
 ```bash
 python src/contador_huevos.py --help
